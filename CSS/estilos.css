@@ -75,16 +75,18 @@ body {
 
 #hero-index {
     width: 100%;
-    height: 100vh;
+    height: 59.2rem;
     background-image: url(/IMG/Banner\ index.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 5vh 2vw;
 }
 
 #hero-index::before {
@@ -93,7 +95,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;  /* 💥 ya no se rompe */
     background-color: rgba(0, 0, 0, 0.60);
     z-index: 1;
 }
@@ -107,11 +109,11 @@ body {
 }
 
 #banner-index h1 {
-    font-size: 5vw;
+    font-size: 6rem;
 }
 
 #banner-index p {
-    font-size: 2.5vw;
+    font-size: 3rem;
 }
 
 #logo-hero {
@@ -128,35 +130,290 @@ body {
 #boton-conocenos {
     display: inline-flex;                
     align-items: center;           
-    gap: 1vw;                     
+    gap: 0.3rem;                     
 
-    padding: 0.5vw 1vw;  
-    margin-top: 2vw;
+    padding: 0.2rem 0.5rem;
+    margin: 6rem;
+    margin-top: 2rem;
 
-    font-size: 2vw;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #f2f0eb;
 
     background-color: #e99f5a;
     border: none;
-    border-radius: 1vw;
+    border-radius: 1rem;
     text-decoration: none;
 
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
     transition: .3s ease;
 }
 
 #boton-conocenos:hover {
     background-color: #f2f0eb;
     color: #e99f5a;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+    box-shadow: 0 1rem 1.2rem rgba(0,0,0,0.4);
     transform: scale(1.15);
 }
 
 #icono-perrito {
-    width: 3vw;
+    width: 3rem;
+    min-width: 40px;
 }
+
+/* Carrusel 1 - Index */
+
+#carrusel-index-1 {
+    background: #e99f5a;
+    padding: 1vw 0;
+    text-align: center;
+    color: #f2f0eb;
+}
+
+#carrusel-index-1 h1 {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+#carrusel-index-1 p {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+}
+
+#contenido-carrusel-index-1 {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+}
+
+#slides-columna-1,
+#slides-columna-2 {
+    width: 100vw;
+    height: 70vw;
+    max-width: 700px;
+    max-height: 600px;
+
+    background: #f2f0eb;
+    border-radius: 55% 35% 70% 35% / 40% 70% 45% 60%;
+    overflow: hidden;
+    box-shadow: 0 0 0 12px #f2f0eb;
+
+    position: relative;
+    flex-shrink: 0;
+}
+
+#slides-1,
+#slides-2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#slides-1 img,
+#slides-2 img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    opacity: 0;
+    animation: animacionCarrusel 9s infinite;
+}
+
+#slides-1 img:nth-child(1) { animation-delay: 0s; }
+#slides-1 img:nth-child(2) { animation-delay: 3s; }
+#slides-1 img:nth-child(3) { animation-delay: 6s; }
+
+#slides-2 img:nth-child(1) { animation-delay: 0s; }
+#slides-2 img:nth-child(2) { animation-delay: 3s; }
+#slides-2 img:nth-child(3) { animation-delay: 6s; }
+
+@keyframes animacionCarrusel {
+    0% { opacity: 1; }
+    27% { opacity: 1; }
+    33% { opacity: 0; }
+    94% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media (max-width: 900px) {
+    #contenido-carrusel-index-1 {
+        flex-direction: column;
+        gap: 10vw;
+    }
+
+    #slides-columna-1,
+    #slides-columna-2 {
+        width: 75vw;
+        height: 75vw;
+    }
+}
+
+/* Sección conocenos */
+
+#conocenos {
+    width: 100%;
+    min-height: 59.2rem;
+    height: auto;
+    margin: auto;
+    background-color: #f2f0eb;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5vh 2vw;
+
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+#info-actividad {
+    text-align: center;
+    color: #333333;
+}
+
+#info-actividad h1 {
+    font-size: 5rem;
+}
+
+#info-actividad h3 {
+    font-size: 2rem;
+}
+
+#info-actividad p:nth-child(3) {
+    font-size: 3rem;
+}
+
+#info-actividad p:nth-child(5) {
+    font-size: 1.5rem;
+}
+
+#icono-huella-conocenos {
+    width: 14vh;
+    max-width: 180px;
+    position: absolute;
+    top: 13vh;
+    right: 7vw;
+}
+
+/* Botones sección conocenos */
+
+.boton-seccion-conocenos {
+    display: inline-flex;                
+    align-items: center;           
+    gap: 0.3rem;                     
+
+    padding: 0.2rem 0.5rem;
+    margin: 1rem;
+    margin-top: 2rem;
+
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f2f0eb;
+
+    background-color: #e99f5a;
+    border: none;
+    border-radius: 1rem;
+    text-decoration: none;
+
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+    transition: .3s ease;
+}
+
+.boton-seccion-conocenos:hover {
+    background-color: #f2f0eb;
+    color: #e99f5a;
+    box-shadow: 0 1rem 1.2rem rgba(0,0,0,0.4);
+    transform: scale(1.15);
+}
+
+/* Sección - Misión y visión */
+
+#mision-vision {
+    background-color: #333333;
+    padding: 2em 5vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+#contenido-mision-vision {
+    display: flex;
+    gap: 32em;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70vw;
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding-top: 5em;
+    padding-bottom: 17.5em;
+}
+
+#mision, #vision {
+    background-color: #f2f0eb;
+    padding: 2em;
+    border-radius: 15px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+#mision p, #vision p {
+    color: #333333;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+#vision p {
+    margin-bottom: 1.8em;
+}
+
+#mision h2 {
+    color: #e99f5a;
+    margin-bottom: 0.8em;
+    font-size: 1.8em;
+    line-height: 1.6;
+}
+
+#vision h2 {
+    color: #83c5d8;
+    margin-bottom: 0.8em;
+    font-size: 1.8em;
+    line-height: 1.6;
+}
+
+#ilustracion-perro {
+    position: absolute;
+    top: 73%;
+    left: 51%;
+    transform: translate(-50%, -60%);
+    width: 80vw;
+    max-width: 800px;
+    height: auto;
+    z-index: 4;
+    pointer-events: none;
+}
+
+/*
 
 
 
