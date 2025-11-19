@@ -7,34 +7,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="/IMG/Logo FPF.png" type="image/png">
+    <link rel="icon" href="../IMG/Logo FPF.png" type="image/png">
     <title>Voluntariado - FPF</title>
 </head>
 <body>
     <header class="header-global">
         <h1>FUNDACIÓN PATITAS FELICES</h1>
         <nav class="nav-menu-global">
-            <a href="/index.html" class="nav-item">
-                <img src="/IMG/Botones/Perro icono.png" alt="Icono perrito">
+            <a href="../index.html" class="nav-item">
+                <img src="../IMG/Botones/Perro icono.png" alt="Icono perrito">
                 PAGINA PRINCIPAL
             </a>
-            <a href="/HTML/catalogo.html" class="nav-item">
-                <img src="/IMG/Botones/Perro icono.png" alt="Icono perrito">
+            <a href="../HTML/catalogo.html" class="nav-item">
+                <img src="../IMG/Botones/Perro icono.png" alt="Icono perrito">
                 ADOPTA
             </a>
-            <a href="/HTML/donaciones.html" class="nav-item">
-                <img src="/IMG/Botones/Perro icono.png" alt="Icono perrito">
+            <a href="../HTML/donaciones.html" class="nav-item">
+                <img src="../IMG/Botones/Perro icono.png" alt="Icono perrito">
                 DONACIONES
             </a>
-            <a href="/index.html#contacto" class="nav-item">
-                <img src="/IMG/Botones/Perro icono.png" alt="Icono perrito">
+            <a href="../index.html#contacto" class="nav-item">
+                <img src="../IMG/Botones/Perro icono.png" alt="Icono perrito">
                 CONTÁCTANOS
             </a>
         </nav>
     </header>
 
-    <main>
-
+    <main class="main-voluntariado">
+        <section id="voluntariado">
+            <form action="#" method="post" class="form-voluntariado">
+                <h2>¡ÚNETE A LA MANADA!</h2>
+                <p>Postúlate aquí para convertirte en voluntario.</p>
+                <input type="text" id="nombre-contacto" name="nombre-contacto" placeholder="Nombre(s)" required>
+                <br>
+                <input type="text" id="apellidos-contacto" name="apellidos-contacto" placeholder="Apellidos" required>
+                <br>
+                <input type="text" id="ciudad-contacto" name="ciudad-contacto" placeholder="Ciudad" required>
+                <br>
+                <input type="email" id="email-contacto" name="email-contacto" placeholder="@Correo electrónico" required>
+                <br>
+                <input type="tel" id="tel-contacto" name="tel-contacto" placeholder="Teléfono" required>
+                <br>
+                <textarea name="mensaje-contacto" id="mensaje-contacto" rows="3" placeholder="Cuéntanos por qué quieres ser voluntario..." required></textarea>
+                <br>
+                <div id="boton-enviar-contacto">
+                    <button type="submit" id="enviar-contacto">
+                        <img src="../IMG/Botones/Perro icono.png" alt="Icono perrito">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer class="footer-global">
@@ -45,7 +68,7 @@
         </div>
         <div id="logo-footer">
             <h1>FUNDACIÓN<br>PATITAS FELICES</h1>
-            <img src="/IMG/Logo FPF.png" alt="Logo FPF">
+            <img src="../IMG/Logo FPF.png" alt="Logo FPF">
         </div>
     </footer>
 </body>
