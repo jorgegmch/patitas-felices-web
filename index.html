@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="IMG/Logo FPF.png" type="image/png">
+    <link rel="icon" href="img/fpf-logo.png" type="image/png">
     <title>Fundación Patitas Felices</title>
 </head>
 
@@ -19,9 +19,9 @@
         
         <nav class="menu">
             <a href="#hero-index">Inicio</a>
-            <a href="HTML/catalogo.html">Adoptar</a>
-            <a href="HTML/donaciones.html">Donaciones</a>
-            <a href="HTML/voluntariado.html">Voluntariado</a>
+            <a href="html/catalog.html">Adoptar</a>
+            <a href="html/donations.html">Donaciones</a>
+            <a href="html/volunteering.html">Voluntariado</a>
             <a href="#contacto">Contáctanos</a>
         </nav>
     </header>
@@ -29,14 +29,14 @@
     <main id="main-index">
 
         <section  id="hero-index">
-            <img src="IMG/Logo FPF.png" alt="Logo Fundación Patitas Felices" id="logo-hero">
+            <img src="img/fpf-logo.png" alt="Logo Fundación Patitas Felices" id="logo-hero">
             <div id="banner-boton">
                 <div id="banner-index">
                     <h1>FUNDACIÓN PATITAS FELICES</h1>
                     <p>Transformando huellitas en segundas oportunidades.</p>
                 </div>
                 <a href="#conocenos" id="boton-conocenos">
-                    <img src="IMG/Botones/Perro icono.png" alt="Icono perrito" id="icono-perrito">
+                    <img src="img/buttons/dog-icon.png" alt="Icono perrito" class="icono-perrito">
                     CONÓCENOS
                 </a>
             </div>
@@ -47,16 +47,16 @@
             <div id="contenido-carrusel-index-1">
                 <div id="slides-columna-1">
                     <div id="slides-1">
-                        <img src="IMG/Carrusel-01/Foto carrusel 1.1.png">
-                        <img src="IMG/Carrusel-01/Foto carrusel 1.2.png">
-                        <img src="IMG/Carrusel-01/Foto carrusel 1.3.png">
+                        <img src="img/carousel-01/carousel-photo-1-1.png">
+                        <img src="img/carousel-01/carousel-photo-1-2.png">
+                        <img src="img/carousel-01/carousel-photo-1-3.png">
                     </div>
                 </div>
                 <div id="slides-columna-2">
                     <div id="slides-2">
-                        <img src="IMG/Carrusel-01/Foto carrusel 1.4.jpg">
-                        <img src="IMG/Carrusel-01/Foto carrusel 1.5.jpg">
-                        <img src="IMG/Carrusel-01/Foto carrusel 1.6.jpg">
+                        <img src="img/carousel-01/carousel-photo-1-4.jpg">
+                        <img src="img/carousel-01/carousel-photo-1-5.jpg">
+                        <img src="img/carousel-01/carousel-photo-1-6.jpg">
                     </div>
                 </div>
             </div>
@@ -65,33 +65,35 @@
 
         <section id="conocenos">
             <div id="info-actividad">
-                <img src="IMG/Icono de huella.png" alt="Icono huella" id="icono-huella-conocenos">
-                <h1>UN REFUGIO DE AMOR</h1>
-                <p>En Patitas Felices rescatamos patitas, recargamos<br>corazones y creamos nuevas historias de amor.<br>Cuidamos, curamos y encontramos hogares donde cada cola<br>vuelva a moverse. ¡Aquí las segundas oportunidades<br>vienen con ladridos y ronroneos incluidos!</p>
+                <div class="titulo-conocenos">
+                    <h1>UN REFUGIO DE AMOR</h1>
+                    <img src="img/paw-icon.png" alt="Icono huella" id="icono-huella-conocenos">
+                </div>
+                <p class="texto-refugio">En Patitas Felices rescatamos patitas, recargamos<br>corazones y creamos nuevas historias de amor.<br>Cuidamos, curamos y encontramos hogares donde cada cola<br>vuelva a moverse. ¡Aquí las segundas oportunidades<br>vienen con ladridos y ronroneos incluidos!</p>
                 <h3>Testimonio de voluntario</h3>
-                <p><q>Ser voluntario aquí me cambió la vida. Ver animales renacer y sentir cómo un pequeño<br>gesto puede devolverles esperanza es indescriptible. No solo los rescatamos a ellos…<br>ellos también nos rescatan a nosotros.</q></p>
-                <a href="HTML/catalogo.html" class="boton-seccion-conocenos">
-                    <img src="IMG/Botones/Perro icono.png" alt="Icono perrito" id="icono-perrito">
+                <p class="texto-testimonio-conocenos"><q>Ser voluntario aquí me cambió la vida. Ver animales renacer y sentir cómo un pequeño<br>gesto puede devolverles esperanza es indescriptible. No solo los rescatamos a ellos…<br>ellos también nos rescatan a nosotros.</q></p>
+                <a href="html/catalog.html" class="boton-seccion-conocenos">
+                    <img src="img/buttons/dog-icon.png" alt="Icono perrito" class="icono-perrito">
                     ADOPTA
                 </a>
-                <a href="HTML/donaciones.html" class="boton-seccion-conocenos">
-                    <img src="IMG/Botones/Perro icono.png" alt="Icono perrito" id="icono-perrito">
+                <a href="html/donations.html" class="boton-seccion-conocenos">
+                    <img src="img/buttons/dog-icon.png" alt="Icono perrito" class="icono-perrito">
                     DONACIONES
                 </a>
-                <a href="HTML/voluntariado.html" class="boton-seccion-conocenos">
-                    <img src="IMG/Botones/Perro icono.png" alt="Icono perrito" id="icono-perrito">
+                <a href="html/volunteering.html" class="boton-seccion-conocenos">
+                    <img src="img/buttons/dog-icon.png" alt="Icono perrito" class="icono-perrito">
                     VOLUNTARIADO
                 </a>
                 <a href="#contacto" class="boton-seccion-conocenos">
-                    <img src="IMG/Botones/Perro icono.png" alt="Icono perrito" id="icono-perrito">
+                    <img src="img/buttons/dog-icon.png" alt="Icono perrito" class="icono-perrito">
                     CONTÁCTANOS
                 </a>
             </div>
         </section>
         
         <section id="mision-vision">
+            <img src="img/orange-cat.png" alt="Gatito rescatado" id="gato-mision-vision">
             <div id="contenido-mision-vision">
-                <img src="IMG/Ilustración perro.png" alt="Ilustración perrito" id="ilustracion-perro">
                 <div id="mision">
                     <h2>MISIÓN</h2>
                     <p>Trabajamos para rescatar, cuidar y reubicar animales en situación vulnerable, ofreciéndoles atención médica, cuidado responsable y un espacio donde puedan recuperar la confianza.</p>
@@ -108,19 +110,55 @@
         <section id="carrusel-index-2">
             <div id="contenido-carrusel-index-2">
                 <div id="slides-3">
-                    <img src="IMG/Carrusel-02/Foto carrusel 2.1.png" alt="Jornada de caricias y conciencia">
+                    <img src="img/carousel-02/carousel-photo-2-1.jpg" alt="Festival Patitas al Aire">
+                    <div class="slide-panel slide-panel-naranja">
+                        <p class="slide-kicker">🎉 Evento comunitario</p>
+                        <h2 class="slide-titulo">FESTIVAL PATITAS<br>AL AIRE</h2>
+                        <span class="slide-divisor"></span>
+                        <p class="slide-texto">Un día lleno de colitas moviéndose, juegos, sonrisas y croquetas.</p>
+                        <p class="slide-texto">Cada peludito se convirtió en el alma del evento y cada abrazo fue una chispa de esperanza para seguir ayudando a más patitas.</p>
+                    </div>
                 </div>
 
                 <div id="slides-4">
-                    <img src="IMG/Carrusel-02/Foto carrusel 2.2.png" alt="Operación ronroneo">
+                    <img src="img/carousel-02/carousel-photo-2-2.jpg" alt="Jornada de Caricias y Conciencia">
+                    <div class="slide-panel slide-panel-naranja">
+                        <p class="slide-kicker">🌿 Voluntariado</p>
+                        <h2 class="slide-titulo">JORNADA DE CARICIAS<br>Y CONCIENCIA</h2>
+                        <span class="slide-divisor"></span>
+                        <p class="slide-texto">Entre mimos, cepilladas y carcajadas, enseñamos a las familias que amar a un animal también es cuidar su corazón.</p>
+                        <p class="slide-texto">Fue un día donde todos salimos con el alma más suave que un pelito de cachorro.</p>
+                    </div>
                 </div>
 
                 <div id="slides-5">
-                    <img src="IMG/Carrusel-02/Foto carrusel 2.3.png" alt="Festival patitas al aire">
+                    <img src="img/carousel-02/carousel-photo-2-3.jpg" alt="Operación Ronroneo">
+                    <div class="slide-panel slide-panel-celeste">
+                        <p class="slide-kicker">✨ Historia de rescate</p>
+                        <h2 class="slide-titulo">OPERACIÓN<br>RONRONEO</h2>
+                        <span class="slide-divisor"></span>
+                        <p class="slide-texto">Lolita fue rescatada del frío abrazo de las calles, ahora ronronea como si siempre hubiera vivido en la calidez de un hogar.</p>
+                        <ul class="slide-meta">
+                            <li><span class="slide-meta-icono">🐾</span> <strong>Nombre:</strong> Lolita</li>
+                            <li><span class="slide-meta-icono">🐾</span> <strong>Edad:</strong> 2 años</li>
+                            <li><span class="slide-meta-icono">🐾</span> <strong>Raza:</strong> Británico de pelo corto</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div id="slides-6">
-                    <img src="IMG/Carrusel-02/Foto carrusel 2.4.png" alt="Operación abrazo salvavidas">
+                    <img src="img/carousel-02/carousel-photo-2-4.jpg" alt="Operación Abrazo Salvavidas">
+                    <div class="slide-panel slide-panel-celeste">
+                        <p class="slide-kicker">💕 Historia de rescate</p>
+                        <h2 class="slide-titulo">OPERACIÓN ABRAZO<br>SALVAVIDAS</h2>
+                        <span class="slide-divisor"></span>
+                        <p class="slide-texto">Entre escombros encontramos a este valiente peludito, escondido como si el mundo fuera demasiado grande para él. Hoy, limpio y seguro, reparte amor.</p>
+                        <ul class="slide-meta">
+                            <li><span class="slide-meta-icono">🐾</span> <strong>Nombre:</strong> Lalito</li>
+                            <li><span class="slide-meta-icono">🐾</span> <strong>Edad:</strong> 3 años</li>
+                            <li><span class="slide-meta-icono">🐾</span> <strong>Raza:</strong> Chihuahua</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -151,25 +189,27 @@
                 <br>
                 <div id="boton-enviar-contacto">
                     <button type="submit" id="enviar-contacto">
-                        <img src="IMG/Botones/Perro icono.png" alt="Icono perrito">
+                        <img src="img/buttons/dog-icon.png" alt="Icono perrito">
                         Enviar
                     </button>
                 </div>
+                <div class="iconos-redes-sociales">
+                    <a href="https://www.facebook.com/?locale=es_LA">
+                        <img src="img/social-icons/facebook-icon.png" alt="Icono de Facebook" id="icono-facebook">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="img/social-icons/instagram-icon.png" alt="Icono de Instagram" id="icono-insta">
+                    </a>
+                    <a href="https://x.com/?lang=es">
+                        <img src="img/social-icons/x-icon.png" alt="Icono de X" id="icono-x">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img src="img/social-icons/youtube-icon.png" alt="Icono de Youtube" id="icono-youtube">
+                    </a>
+                </div>
             </form>
             <div id="redes-sociales-index">
-                <img src="IMG/Perro contacto.png" alt="Perro de la sección contacto" id="perro-contacto">
-                <a href="https://www.facebook.com/?locale=es_LA">
-                    <img src="IMG/Iconos-redes-sociales/facebook icono.png" alt="Icono de Facebook" id="icono-facebook">
-                </a>
-                <a href="https://www.instagram.com/">
-                    <img src="IMG/Iconos-redes-sociales/instagram icono.png" alt="Icono de Instagram" id="icono-insta">
-                </a>
-                <a href="https://x.com/?lang=es">
-                    <img src="IMG/Iconos-redes-sociales/x icono.png" alt="Icono de X" id="icono-x">
-                </a>
-                <a href="https://www.youtube.com/">
-                    <img src="IMG/Iconos-redes-sociales/youtube icono.png" alt="Icono de Youtube" id="icono-youtube">
-                </a>
+                <img src="img/dog-contact.png" alt="Perro de la sección contacto" id="perro-contacto">
             </div>
         </section>
 
@@ -179,11 +219,11 @@
         <div id="info-footer">
             <p>Correo electrónico<br>contacto@patitasfelices.org</p>
             <p>Número de teléfono<br>(+57) 322-567-1228</p>
-            <p>© 2025 Patitas felices - Desarrollo web por <a href="https://github.com/jorgegmch">Jorge Gomez</a></p>
+            <p>© 2025 Patitas felices - Desarrollo web por <a href="https://github.com/jorgegmch">jorgegmch</a></p>
         </div>
         <div id="logo-footer">
             <h1>FUNDACIÓN<br>PATITAS FELICES</h1>
-            <img src="IMG/Logo FPF.png" alt="Logo FPF">
+            <img src="img/fpf-logo.png" alt="Logo FPF">
         </div>
     </footer>
 </body>
