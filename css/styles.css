@@ -1064,8 +1064,8 @@ body {
 }
 
 .perfil-imagen {
-    flex: 1 1 320px;
-    max-width: 350px;
+    flex: 1 1 380px;
+    max-width: 420px;
     border-radius: 12px;
     overflow: hidden;
     border: 6px solid #e99f5a; /* borde naranja */
@@ -1106,16 +1106,23 @@ body {
     font-weight: 700;
 }
 
+.botones-perfil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .boton-perfil {
     display: inline-flex;                
     align-items: center;           
     gap: 0.3rem;                     
 
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0.8rem;
     margin: 1rem;
     margin-top: 2rem;
 
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     font-weight: bold;
     color: #f2f0eb;
 
