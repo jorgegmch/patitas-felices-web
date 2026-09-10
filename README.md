@@ -29,6 +29,7 @@ Fully responsive design with fluid typography and spacing (`clamp()`), and no ex
 patitas-felices-web/
 ├── index.html                     # Home page
 ├── LICENSE
+├── .gitignore
 ├── css/
 │   └── styles.css                 # Single stylesheet for the whole site
 ├── html/
