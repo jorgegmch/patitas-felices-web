@@ -134,4 +134,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Built by [Jorge Gomez](https://github.com/jorgegmch)
+Built by [jorgegmch](https://github.com/jorgegmch)
